@@ -3,12 +3,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Green */
+  --green500: #3d8168;
+  --green700: #1a4032;
+  /* Neutrals & Monochromes */
+  --black: #1c232b;
+  --gray: #6c7289;
+  --cream: #f2eae2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-pretendard: var(--font-pretendard), ui-sans-serif, system-ui, sans-serif;
+  --color-green500: var(--green500);
+  --color-green700: var(--green700);
+  --color-black: var(--black);
+  --color-gray: var(--gray);
+  --color-cream: var(--cream);
+  --background-image-green500: var(--green500);
+  --background-image-green700: var(--green700);
+
+  /* fonts */
+  --font-fraunces: var(--font-fraunces), serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,8 +35,42 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-pretendard);
+.text-preset-1 {
+  font-family: var(--font-fraunces);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.text-preset-5 {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
 }
