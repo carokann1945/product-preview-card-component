@@ -5,12 +5,10 @@ export default function Home() {
   return (
     <div className="w-[350px] flex flex-col bg-white rounded-[8px] overflow-hidden md:flex-row md:w-[600px]">
       <div className="w-full h-[342px] relative md:w-[300px] md:h-auto">
-        <picture>
-          {/* md 이상일 때 */}
-          <source media="(min-width: 768px)" srcSet="/images/image-product-desktop.jpg" />
-          {/* 기본 (모바일) */}
-          <Image src="/images/image-product-mobile.jpg" alt="product" fill className="object-cover" />
-        </picture>
+        {/* 모바일 이미지 */}
+        <Image src="/images/image-product-mobile.jpg" alt="product" fill className="object-cover md:hidden" />
+        {/* 데스크톱 이미지 */}
+        <Image src="/images/image-product-desktop.jpg" alt="product" fill className="object-cover hidden md:block" />
       </div>
       <div className="w-full p-[32px] flex flex-col gap-[24px] md:w-[236px] md:flex-1 md:gap-[32px]">
         <div className="w-full flex flex-col gap-[24px]">

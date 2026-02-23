@@ -1,4 +1,6 @@
-# Deployment link
+# Live site URL
+
+https://product-preview-card-component-seven-nu.vercel.app/
 
 # Frontend Mentor - Product preview card component
 
